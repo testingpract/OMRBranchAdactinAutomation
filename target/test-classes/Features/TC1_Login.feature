@@ -1,8 +1,9 @@
+@Login
 Feature: Validating Adactin Login functionality
 
   Scenario Outline: Login with valid credentials
     Given User is on the Adaction login Page
-    When User should login "<userName>" , "<password>"
+    When User should Login "<userName>" , "<password>"
     Then User should verify success message "Hello Saravana95!" after login
 
     Examples: 
@@ -11,7 +12,7 @@ Feature: Validating Adactin Login functionality
 
   Scenario Outline: Login Adactin with Enter key
     Given User is on the Adaction login Page
-    When User should login with the help of enter key "<userName>" , "<password>"
+    When User should Login with the help of enter key "<userName>" , "<password>"
     Then User should verify success message "Hello Saravana95!" after login
 
     Examples: 
@@ -20,7 +21,7 @@ Feature: Validating Adactin Login functionality
 
   Scenario Outline: Login Adactin with invalid credentials
     Given User is on the Adaction login Page
-    When User should login "<userName>" , "<password>"
+    When User should Login "<userName>" , "<password>"
     Then User should verify error message contains "Verify Invalid Login details or Your Password might have expired."
 
     Examples: 

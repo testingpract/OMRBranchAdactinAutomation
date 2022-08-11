@@ -1,0 +1,489 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 22,
+        "name": "Verifying Book A Hotel functionality by selecting all the fields",
+        "description": "",
+        "id": "validating-adactin-book-a-hotel-page;verifying-book-a-hotel-functionality-by-selecting-all-the-fields;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 768200,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "User is on the Adaction login Page",
+            "match": {
+              "location": "CommonStep.loginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 21200,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User should Login \"Saravana95\" , \"Saravana@95\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Saravana95\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Saravana@95\"",
+                  "offset": 33
+                }
+              ],
+              "location": "TC1_LoginStep.login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User should verify success message \"Hello Saravana95!\" after login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hello Saravana95!\"",
+                  "offset": 35
+                }
+              ],
+              "location": "CommonStep.userShouldVerifySuccessMessageAfterLogin(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11300,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User should search hotel \"Sydney\",\"Hotel Creek\",\"Standard\",\"1 - One\",\"18/07/2022\",\"19/07/2022\",\"1 - One\" and \"1 - One\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"Standard\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"18/07/2022\"",
+                  "offset": 69
+                },
+                {
+                  "val": "\"19/07/2022\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 95
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 109
+                }
+              ],
+              "location": "TC2_SearchHotelStep.userShouldSearchHotelAnd(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17500,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User should verify text \"Select Hotel\" after search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Select Hotel\"",
+                  "offset": 24
+                }
+              ],
+              "location": "TC2_SearchHotelStep.userShouldVerifyTextAfterSearch(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9900,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User should select hotel",
+            "match": {
+              "location": "TC3_SelectHotelStep.userShouldSelectHotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10299,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User should verify text \"Book A Hotel\" after selecting hotel",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Book A Hotel\"",
+                  "offset": 24
+                }
+              ],
+              "location": "TC3_SelectHotelStep.userShouldVerifyTextAfterSelectingHotel(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8500,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User should book hotel \"Saravana\",\"Chithiraivel\" and \"OMR thuraipakkam chennai\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Saravana\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Chithiraivel\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"OMR thuraipakkam chennai\"",
+                  "offset": 53
+                }
+              ],
+              "location": "TC4_BookHotelStep.userShouldBookHotelAnd(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ccNo",
+                  "ccType",
+                  "expMonth",
+                  "expYear",
+                  "cvv"
+                ]
+              },
+              {
+                "cells": [
+                  "3739378822493297",
+                  "American Express",
+                  "June",
+                  "2022",
+                  "234"
+                ]
+              },
+              {
+                "cells": [
+                  "9826376383982762",
+                  "VISA",
+                  "July",
+                  "2022",
+                  "345"
+                ]
+              },
+              {
+                "cells": [
+                  "6353829272625282",
+                  "Master Card",
+                  "August",
+                  "2022",
+                  "678"
+                ]
+              },
+              {
+                "cells": [
+                  "7537292625282919",
+                  "Other",
+                  "November",
+                  "2022",
+                  "901"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8100,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User should verify text after booking hotel \"Booking Confirmation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Booking Confirmation\"",
+                  "offset": 44
+                }
+              ],
+              "location": "TC4_BookHotelStep.userShouldVerifyTextAfterBookingHotel(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BookHotel"
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "Verifying Book A Hotel functionality by without selecting any fields",
+        "description": "",
+        "id": "validating-adactin-book-a-hotel-page;verifying-book-a-hotel-functionality-by-without-selecting-any-fields;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 50500,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "User is on the Adaction login Page",
+            "match": {
+              "location": "CommonStep.loginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15400,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "User should Login \"Saravana95\" , \"Saravana@95\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Saravana95\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Saravana@95\"",
+                  "offset": 33
+                }
+              ],
+              "location": "TC1_LoginStep.login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11700,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "User should verify success message \"Hello Saravana95!\" after login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hello Saravana95!\"",
+                  "offset": 35
+                }
+              ],
+              "location": "CommonStep.userShouldVerifySuccessMessageAfterLogin(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10101,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "User should search hotel \"Sydney\",\"Hotel Creek\",\"Standard\",\"1 - One\",\"18/07/2022\",\"19/07/2022\",\"1 - One\" and \"1 - One\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"Standard\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"18/07/2022\"",
+                  "offset": 69
+                },
+                {
+                  "val": "\"19/07/2022\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 95
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 109
+                }
+              ],
+              "location": "TC2_SearchHotelStep.userShouldSearchHotelAnd(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10001,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "User should verify text \"Select Hotel\" after search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Select Hotel\"",
+                  "offset": 24
+                }
+              ],
+              "location": "TC2_SearchHotelStep.userShouldVerifyTextAfterSearch(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9500,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "User should select hotel",
+            "match": {
+              "location": "TC3_SelectHotelStep.userShouldSelectHotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8501,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "User should verify text \"Book A Hotel\" after selecting hotel",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Book A Hotel\"",
+                  "offset": 24
+                }
+              ],
+              "location": "TC3_SelectHotelStep.userShouldVerifyTextAfterSelectingHotel(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8400,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "User should book hotel without selecting any fields",
+            "match": {
+              "location": "TC4_BookHotelStep.userShouldBookHotelWithoutSelectingAnyFields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7800,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "User should verify seven error messages \"Please Enter your First Name\",\"Please Enter you Last Name\",\"Please Enter your Address\",\"Please Enter your 16 Digit Credit Card Number\",\"Please Select your Credit Card Type\",\"Please Select your Credit Card Expiry Month\" and \"Please Enter your Credit Card CVV Number\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please Enter your First Name\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"Please Enter you Last Name\"",
+                  "offset": 71
+                },
+                {
+                  "val": "\"Please Enter your Address\"",
+                  "offset": 100
+                },
+                {
+                  "val": "\"Please Enter your 16 Digit Credit Card Number\"",
+                  "offset": 128
+                },
+                {
+                  "val": "\"Please Select your Credit Card Type\"",
+                  "offset": 176
+                },
+                {
+                  "val": "\"Please Select your Credit Card Expiry Month\"",
+                  "offset": 214
+                },
+                {
+                  "val": "\"Please Enter your Credit Card CVV Number\"",
+                  "offset": 264
+                }
+              ],
+              "location": "TC4_BookHotelStep.userShouldVerifySevenErrorMessagesAnd(String,String,String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BookHotel"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Adactin Book A Hotel page",
+    "description": "",
+    "id": "validating-adactin-book-a-hotel-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/TC4_BookHotel.feature",
+    "tags": [
+      {
+        "name": "@BookHotel",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
